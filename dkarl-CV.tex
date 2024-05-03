@@ -1,0 +1,229 @@
+\documentclass[10pt, a4paper]{article}
+
+\input{cv-themes/theme_selection.tex}
+
+%----------------------------------------------------------------------------------------
+%	 THEMES
+%----------------------------------------------------------------------------------------
+
+% Define the desired theme out of the following: beige, blue, bw, coral, earth, framed, gray, minimal, onyx, plain
+% See screenshots in preview/ directory
+\theme{bw}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need a particular field, just remove the content leaving the command, e.g. \aboutdesc{}
+
+\name{Domagoj Karl} % Your name
+\jobtitle{Software Engineer} % Job title/career
+\profilepic{profilna_dk.jpg} % Profile picture (supported only with "bw", "gray" and "framed" themes)
+\aboutdesc{Dedicated software engineer with a strong passion for Linux Operating systems within the automotive sector. Committed to delivering precise and impactful results.} % Description for ABOUT ME section
+\location{Zagreb, Croatia} % Address/location
+\phone{+385 97 791 0514} % Phone number
+\mail{karl.domagoj@gmail.com} % Mail
+\dateofbirth{16 Aug 1996} % Date of birth
+\drivinglicenses{EU License: A2, A, B} % Drivers license category
+\linkedin{\href{https://www.linkedin.com/in/domagoj-karl-0766a2215}{linkedin.com/domagoj-karl}} % \linkedin{\href{LINK}{DESCRIPTION}}
+\github{\href{https://github.com/dombak1608}{github.com/dombak1608}} % \github{\href{{LINK}{DESCRIPTION}}
+\aboutpersonal{I enjoy spending my personal time working on my cars and\\motorcycles, playing racquet sports, Tennis, Squash,\\Badminton, Padel.\\I also enjoy immersing myself in nature through activities such as biking, hiking,  or going on motorcycle trips.} % Description for PERSONAL section
+\aboutpersonalprojects{Sim Racing rig - designed and handcrafted a rig for Croatian iRacing legaue\\\\
+Trackday car - modified the car that is used on Trackday events on Croatian racetracks\\\\
+Tennis stringing machine - designed and handcrafted a machine used for stringing the Tennis/Badminton racquets\\\\
+Motorcycle diagnostics and maintenance tool - Zephyr RTOS based OBD2 tool used for motorcycle; in progress
+} % Description for PERSONAL section
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Both proskills and perskills can be used separately or together. If you do not plan to use professional and personal skill charts, just remove the content leaving the command, e.g. \perskills{} or \proskills{}
+
+% Define professional skills (values are from interval [0,1])
+%\proskills{}
+
+% Define personal skills (values are from interval [0,1])
+%\perskills{}
+
+% Define language skills (values are from interval [0,5). If you do not plan to use the language skills chart, just remove the content leaving the command, e.g. \langskills{}
+% Language skill circles are designed to be included into the sidebar
+%\langskills{}
+
+\begin{document}
+
+\makeprofile % Print name & job description. Also prints out profile picture if it's supported by the theme
+
+\begincols
+
+%----------------------------------------------------------------------------------------
+%	 SIDEBAR
+%----------------------------------------------------------------------------------------
+% Use \subsection inside the sidebar
+
+% Print defined contact information
+% \makecontact{NAME FOR CONTACT SECTION}
+\makecontact{CONTACT}
+
+% \makedob{NAME FOR DATE OF BIRTH SECTION}
+\makedob{DATE OF BIRTH}
+
+% \makelicense{NAME FOR ABOUT ME SECTION}
+\makeabout{ABOUT ME}
+
+% \makelicense{NAME FOR DRIVING LICENSE SECTION}
+\makelicense{DRIVING LICENSE}
+
+\subsection{LANGUAGES}
+%\langcircles % Command for drawing language skill circles
+{Croatian: C2}\\
+{English: C1}\\
+{German: A2}
+
+%\subsection{PERSONAL}
+\makepersonal{PERSONAL} % Command for drawing personal skill bars.
+\makepersonalprojects{PERSONAL\\PROJECTS} % Command for drawing personal skill bars.
+
+%\subsection{PROFESSIONAL}
+%\proskills % Command for drawing professional skill bars.
+
+%----------------------------------------------------------------------------------------
+%	 BODY
+%----------------------------------------------------------------------------------------
+% Use \section inside the body
+\switchcols % This command is used to switch to the document body
+
+\section{WORK EXPERIENCE}
+
+% \begin{cvitem}{Job title}{Company name}{Location}{Duration}
+% Job description
+% \end{cvitem}
+% To add bullets inside the job description:
+% \begin{cvitem}{Job title}{Company name}{Location}{Duration}
+%   \begin{itemize}
+%       \item
+%   \end{itemize}
+% \end{cvitem}
+
+\begin{cvitem}{Software Engineer}{Rimac Technology}{Zagreb, Croatia}{Aug 2019 - Present (4 years 10 months)}
+Designing and upholding Yocto Linux distributions for Infotainment ECUs\\utilized within the automotive industry.
+    \begin{itemize}
+        \item Developing Linux device drivers, Bash scripting, Bitbake recipes
+        \item Key contributor to changes and developments for new hardware revisions
+        \item Responsible for software releases
+        \item Debugging real-time issues on live vehicles during on-site engagements
+        \item Experience with Toradex-Apalis i.MX SoMs and NXP SoC (linux-imx, linux-toradex kernel)
+        \item Qt toolchain development, Python automated deployments for production, Linux Systemd optimizations
+        \item Rimac Automobili Internship (Aug 2019 - Sep 2020)
+    \end{itemize}
+\end{cvitem}
+
+
+\begin{cvitem}{Linux Developer}{Končar Electrical Engineering Institute}{Zagreb, Croatia}{May 2022 - Jul 2022 (2 months)}
+    \begin{itemize}
+        \item Development of embedded Linux C applications for inner-train communication
+        \item Doing educations for Yocto Linux development
+    \end{itemize}
+\end{cvitem}
+
+
+%\begin{cvitem}{Junior/Internship Software Engineer}{Rimac Automobili}{Zagreb, Croatia}{Aug 2019 - Sep 2021 (2 years 2 months)}
+%    \begin{itemize}
+%        \item Developing and maintaining Yocto Linux distribution for Infotainment ECUs used in automotive
+%    \end{itemize}
+%\end{cvitem}
+
+\begin{cvitem}{Auto Rental Clerk}{Avant Car Croatia}{Zagreb, Croatia}{Jun 2018 - Oct 2018 (5 months)}
+    \begin{itemize}
+        \item Vehicle preparations and handover with customers
+        \item Vehicle transfers and maintenance
+    \end{itemize}
+\end{cvitem}
+    
+\section{EDUCATION}
+
+% \begin{cvitem}{Education level}{College/High school}{Location}{Duration}
+% Description
+% \end{cvitem}
+
+Faculty of Electrical Engineering, Computer Science and Information Technology\\
+\begin{cvitem}{Master's degree}{Automotive Computing and Communications}{Osijek, Croatia}{2018-2020}
+    \begin{itemize}
+        \item Magna cum laude
+        \item Thesis: Development of Operating System for In-Vehicle-Infotainment used in Car
+    \end{itemize}
+\end{cvitem}
+
+\begin{cvitem}{Bachelor's degree}{Computer Engineering}{Osijek, Croatia}{2015-2018}
+%Faculty of Electrical Engineering, Computer Science and Information Technology Osijek
+    \begin{itemize}
+        \item Summa cum laude
+        \item Thesis: Smart Tennis Racquet Development Based on Arduino Platform
+    \end{itemize}
+\end{cvitem}
+
+%\section{LANGUAGES}
+%
+%\begin{langs}
+%%   \langsitem{Language}{Native} % Optionally add \cline{2-3} after a row to insert a semi-line between languages
+%    \langsitem{English}{Native} \cline{2-3}
+%%   \langsitemmulti{Language}{Understanding level}{Speaking level}{Writing level}
+%    \langsitemmulti{German}{B1}{B2}{B1}
+%\end{langs}
+%
+%\cefrdesc % Use this to add CEFR description, otherwise delete or comment it out
+
+\section{LICENSES and CERTIFICATION}
+
+\begin{cvitem}{TSN Training}{Technica Engineering and Ethernovia}{Munich, Germany}{Mar 2023}
+    issued by WEKA Fachmedien GmbH.
+\end{cvitem}
+
+\section{PUBLICATIONS}
+
+% \begin{projitem}{Project name}{\href{link}{link description}}
+% Project description
+% \end{projitem}
+
+\begin{projitem}{DORS/CLUC - May 2023}{\href{https://youtu.be/HTWr7Owovx8?si=T6Tf8IGvjVxLS3Mo}{YouTube}}
+    Held a conference speech on Croatian Linux Users Conference about Embedded Linux development for a device used in a car.
+\end{projitem}
+
+% Use \skillsbars to draw professional skill bars next to the personal skill bars
+% \skillsbars{NAME FOR PROFESSIONAL SKILLS SECTION}{NAME FOR PERSONAL SKILLS SECTION}
+%\skillsbars{PROFESSIONAL}{PERSONAL}
+\section{SKILLS}
+
+Linux Yocto Development
+\begin{itemize}
+    \item Linux Device Drivers (C language) - Automotive Ethernet, RTC time synchronization, Bluetooth-WiFi drivers, CRC region screen safety,\\Modbus/CAN communication
+    \item Linux Kernel configuration - for various HW revisions; menuconfig
+    \item U-Boot Device Drivers (C language) - Automotive Ethernet
+    \item U-Boot optimizations - Redundant Environment, Boot time
+    \item Linux Device Tree - multiple HW boards and revisions
+    \item Bitbake recipes
+    \item Python - automated production software deployment (End of Line)
+    \item Bash scripting - various development helper scripts and production used runtime scripts
+    \item Systemd services - boot optimizations, proper shutdown/startup\\operations
+    \item Network routing - WiFi, ethernet, LTE
+    \item TSN - ethernet time synchronization, credit-based shapers
+    \item git, CI/CD - source code tracking, building, deployment
+\end{itemize}
+
+Project skills
+\begin{itemize}
+    \item Jira task tracking (Scrum/Kanban)
+    \item Managing software releases
+    \item Preparation of software for EMC certification process, documentation
+    \item Customer communication, live engineering support
+\end{itemize}
+
+Soft skills
+\begin{itemize}
+    \item Task-oriented with attention to details
+    \item Communicative and collaborative
+    \item Willing to take ownership of specific components
+\end{itemize}
+
+\fincols
+\end{document}
